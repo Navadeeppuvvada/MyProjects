@@ -1,15 +1,60 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>Number Guessing Game</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
-<body style="text-align: center; font-size: large;">
-    
-    Enter a number : <input type="number" id ="guessField"><br>
-    <h3 id="resultShow"></h3>
-    <button id="mybtn">Check</button>
+
+<body>
+
+    <main class="game-container">
+
+        <div class="game-card">
+
+            <div class="game-icon">🎯</div>
+
+            <p class="game-label">MINI CHALLENGE</p>
+
+            <h1>Number Guessing</h1>
+
+            <p class="description">
+                Think you can guess the secret number?
+                It's somewhere between 1 and 1000.
+            </p>
+
+            <div class="input-section">
+
+                <label for="guessField">Enter your guess</label>
+
+                <input
+                    type="number"
+                    id="guessField"
+                    placeholder="Enter a number..."
+                    min="1"
+                    max="1000"
+                >
+
+            </div>
+
+            <button id="mybtn">Check Answer <span>→</span></button>
+
+            <h3 id="resultShow" aria-live="polite"></h3>
+
+            <div class="game-footer">
+                <span>⚡ Test your intuition</span>
+                <span>1 — 1000</span>
+            </div>
+
+        </div>
+
+    </main>
+
     <script src="/NumberGuessGame/NumberGuess.js"></script>
+
 </body>
 </html>

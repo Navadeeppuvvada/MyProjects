@@ -38,7 +38,7 @@
 
 
 const min = 1;
-const max = 100;
+const max = 1000;
 
 const guessField = document.getElementById("guessField");
 const mybtn = document.getElementById("mybtn");
